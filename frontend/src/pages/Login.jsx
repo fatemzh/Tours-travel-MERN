@@ -27,11 +27,10 @@ const Login = () => {
                     <Form>
                         <FormGroup>
                             <input type="email" placeholder='Email' required id='email'
-                                onChange={handleChange}/>
+                                />
                         </FormGroup>
                         <FormGroup>
-                            <input type="password" placeholder='Password' required id='password'
-                                onChange={handleChange}/>
+                            <input type="password" placeholder='Password' required id='password'/>
                         </FormGroup>
                         <Button type='submit' className='btn secondary__btn auth__btn'>Login</Button>
                     </Form>
