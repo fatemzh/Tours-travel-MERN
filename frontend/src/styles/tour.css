@@ -14,3 +14,11 @@
     cursor: pointer;
     font-weight: 700;
 }
+
+.active__page{
+    background: var(--secondary-color);
+    color: #fff !important;
+}
+
+
+
