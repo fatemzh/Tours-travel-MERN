@@ -45,11 +45,12 @@ const Booking = ({tour, avgRating}) => {
       </div>
 
       {/*WWWWWWWWWWWWWWWWWWWW BOOKING FORM START WWWWWWWWWWWWWWWWWWWWWWWWWWWW*/}
+      {/*WWWWWWWWWW MODIFIER SYSTEME DE VALIDATION WWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/}
       <div className="booking__form">
         <h5>Information</h5>
         <Form className='booking__info-form' onSubmit={handleClick}>
           <FormGroup>
-            <input type="text" placeholder='Full Name' id='fullName' required onChange={handleChange}/>
+            <input type="text" placeholder='Full Name' id='fullName' required onChange={handleChange} />
           </FormGroup>
           <FormGroup>
             <input type="number" placeholder='Phone' id='phone' required onChange={handleChange}/>
