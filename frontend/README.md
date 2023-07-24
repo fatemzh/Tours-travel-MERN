@@ -1,3 +1,5 @@
+Je suis une débutante en développement React et j'ai besoin de ton aide en tant que développeur expérimenté en React. Je suis un tutoriel intitulé "MERN Stack tours & Travels booking website backend API Using node js, mongoDB & DJWT Mern project"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
