@@ -6,7 +6,7 @@ node_modules/
 # Ignorer les fichiers de build
 build/
 dist/
-node_modules/
+frontend/node_modules/.cache/default-development/0.pack (123.50 MB)node_modules/
 
 # Ignorer les fichiers de configuration sensibles
 config.js

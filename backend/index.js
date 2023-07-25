@@ -5,6 +5,7 @@ import cors from 'cors'
 import cookieParser from 'cookie-parser'
 
 import tourRoute from './routes/tours.js'
+import userRoute from './routes/users.js'
 
 dotenv.config()
 const app = express()
@@ -17,7 +18,7 @@ const connect = async () => {
         await mongoose.connect(process.env.MONGO_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-        })
+        }) 
 
         console.log("MongoDB database connected")
 
@@ -36,6 +37,7 @@ app.use(express.json())
 app.use(cors())
 app.use(cookieParser())
 app.use('/tours', tourRoute)
+app.use("/users", userRoute)
 
 app.listen(port, () => {
     connect()
