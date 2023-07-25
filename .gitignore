@@ -1,0 +1,13 @@
+# Exemple de fichier .gitignore
+
+# Ignorer les fichiers de dépendances Node.js
+node_modules/
+
+# Ignorer les fichiers de build
+build/
+dist/
+node_modules/
+
+# Ignorer les fichiers de configuration sensibles
+config.js
+.env
