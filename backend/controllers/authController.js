@@ -1,5 +1,5 @@
 import User from "../models/User.js"
-import bcrypt from "bcryptjs"
+import bcrypt from "bcryptjs" 
 import jwt from "jsonwebtoken" 
 
 //User registration
@@ -12,7 +12,7 @@ export const register = async (req, res) => {
         const newUser = new User({
             username: req.body.username,
             email: req.body.email,
-            password: hash,
+            password: hash,  
             photo: req.body.photo,
         })
     
@@ -71,7 +71,6 @@ export const login = async (req, res) => {
             {expiresIn: "15d"}
         )
 
-
         // set token in the browser cookies and send the response to the client
         res
         .cookie("accessToken", token, {
@@ -80,14 +79,13 @@ export const login = async (req, res) => {
         })
         .status(200)
         .json({
-            success: true,
-            message: "Successfully logged in",
             token,
             data:{...rest},
             role,
         })
 
     }catch(err){
+        console.error(err);  // log the error
         res
         .status(500)
         .json({success: false, message: "Failed to log in"})

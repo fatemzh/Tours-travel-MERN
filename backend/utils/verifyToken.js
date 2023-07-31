@@ -15,7 +15,7 @@ const verifyToken = (req, res, next) => {
         if(err){
             return res.status(401).json({
                 success: false,
-                message: 'Token is valid'
+                message: 'Token is invalid'
             })
         }
         req.user = user
@@ -32,13 +32,13 @@ export const verifyUser = (req, res, next) => {
             .status(401)
             .json({success: false, message: 'You are not authenticated'})
         }
-})
+    })
 }
 
 
 export const verifyAdmin = (req, res, next) => {
     verifyToken(req, res, next, () => {
-        if(req.user.id === req.params.id || req.user.role === 'admin'){
+        if(req.user.role === 'admin'){
             next()
         }else{
            return res
