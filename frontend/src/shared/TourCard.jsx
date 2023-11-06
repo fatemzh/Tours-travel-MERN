@@ -7,7 +7,7 @@ import './../shared/tour-card.css';
 
 const TourCard = ({tour}) => {
 
-    const {id, title, city, photo, price, featured, reviews} = tour;
+    const {_id, title, city, photo, price, featured, reviews} = tour;
 
     const {totalRating, avgRating} = calculateAvgRating(reviews)
 
@@ -35,7 +35,7 @@ const TourCard = ({tour}) => {
             </div>
 
             <h5 className='tour__title'> 
-                <Link to={`/tours/${id}`}>
+                <Link to={`/tours/${_id}`}>
                     {title}
                 </Link>
             </h5>
@@ -47,7 +47,7 @@ const TourCard = ({tour}) => {
             </div>
 
             <button className='btn booking__btn'>
-                <Link to={`/tours/${id}`}>Book Now</Link>
+                <Link to={`/tours/${_id}`}>Book Now</Link>
             </button>
         </CardBody>
       </Card>

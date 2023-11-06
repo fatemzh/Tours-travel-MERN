@@ -76,3 +76,12 @@ backend configuration
 cd backend
 npm init -y
 npm i express mongodb mongoose dotenv cors cookie-parser jsonwebtoken bcryptjs        
+
+
+
+Démarrer projet avec :
+cd frontend 
+npm start
+
+cd backend
+npm run start

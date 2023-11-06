@@ -10,4 +10,4 @@ router.post('/', verifyUser ,createBooking)
 router.get('/:id', verifyUser ,getBooking)
 router.get('/', verifyAdmin ,getAllBooking)
 
-export default router
+export default router  
